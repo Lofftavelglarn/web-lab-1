@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .footer {
+    background-color: green;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.content {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    width: 500px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: red;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 30px;
+}
+
+ul li {
+    padding: 5px;
+}
+
+.content-image {
+    width: 100px;
+    height: 100px;
+    border: 3px solid white;
+    padding: 10px;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.image-text-wrapper p {
+    text-align: justify;
+}
+
+.list-section {
+    margin-top: 20px;
+}
+
+.text-and-box-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.text-section {
+    width: 70%;
+}
+
+.text-section h2{
+    font-size: 16px;
+}
+
+.text-section p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.box-and-img-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.image-section {
+    margin-top: 10px;
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 60px);
+    grid-template-rows: repeat(3, 45px);
+    gap: 2px;
+    margin-top: 10px;
+    border: 1px solid white;
+    padding: 3px;
+}
+
+.box-item {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    border: 1px solid white;
+}
+
+.box-item.green {
+    background-color: green;
+    grid-row: span 2;
+}
+
+.box-item.red {
+    background-color: red;
+    grid-column: span 2;
+}
